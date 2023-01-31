@@ -27,7 +27,7 @@ p{
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 #title{
@@ -59,13 +59,21 @@ p{
   margin: 5% 3% 5% 0;
 }
 
+.positioning{
+  position: relative; 
+}
 .title-image{
-  width: 60%;
+  width: 40%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 15%;
 }
 
 #features{
-padding: 7% 15%;  
+padding: 7% 15%; 
+background-color: #fff; 
+position: relative;
+
 }
 
 .feature-box{
@@ -83,7 +91,7 @@ padding: 5%;
 }
 
 #testimonials{
-  padding: 7% 15%;
+  
   text-align: center;
   background-color: #ef8172;
   color: #fff;
@@ -104,4 +112,55 @@ padding: 5%;
 .press-logo{
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-col{
+  padding: 3% 2%;
+
+}
+
+#cta{
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.cta-heading{
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+#footer{
+  background-color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+
+}
+
+.social-icon{
+  margin: 20px 10px;
+}
+
+@media(max-width: 990px){
+
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    width: 60%;
+    transform: rotate(0deg);
+    position: static;
+  }
 }
